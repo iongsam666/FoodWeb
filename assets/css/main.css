@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Abel", sans-serif;
+}
+
+p {
+  font-weight: 300;
+  color: #111;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/bg.jpg);
+  background-size: cover;
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 5em;
+  color: #fff;
+}
+
+.banner .content p {
+  font-size: 1em;
+  color: #fff;
+}
+
+.btn {
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  background: #ff0157;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-top: 20px;
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  letter-spacing: 6px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky {
+  background-color: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 2em;
+  letter-spacing: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+
+header.sticky .logo {
+  color: #111;
+}
+
+.logo span {
+  color: #ff0157;
+}
+
+.navigation {
+  position: relative;
+  list-style: none;
+  display: flex;
+}
+
+.navigation li {
+  margin-left: 20px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header.sticky .navigation li a {
+  color: #111;
+}
+
+header .navigation li a:hover {
+  color: #ff0157;
+}
+
+section {
+  padding: 100px;
+}
+
+.row {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+}
+
+.col50 {
+  position: relative;
+  width: 48%;
+}
+
+.titleText {
+  color: #111;
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.titleText span {
+  color: #ff0157;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.row .col50 .imgBx {
+  position: relative;
+  width: 100%;
+  /* min-height: 300px; */
+  height: 100%;
+}
+
+.row .col50 .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tilte p {
+  margin-top: 5px;
+}
+
+.menu .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.menu .content .box {
+  width: 340px;
+  margin: 20px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu .content .box .imgBx {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.menu .content .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu .content .box .text {
+  padding: 15px 0 5px;
+}
+
+.menu .content .box .text h3 {
+  color: #111;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.expert .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.expert .content .box {
+  width: 250px;
+  margin: 15px;
+}
+
+.expert .content .box .imgBx {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.expert .content .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.expert .content .box .text {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.expert .content .box .text h3 {
+  color: #111;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
+.testimonials {
+  background: url(../img/bg2.jpg);
+  background-size: cover;
+}
+
+.white .titleText,
+.white p {
+  color: #fff;
+}
+
+.testimonials .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.testimonials .content .box {
+  width: 340px;
+  margin: 20px;
+  padding: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonials .content .box .imgBx {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.testimonials .content .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.testimonials .content .box .text {
+  text-align: center;
+}
+
+.testimonials .content .box .text p {
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.testimonials .content .box .text h3 {
+  margin-top: 20px;
+  color: #ff0157;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.contact {
+  background: url(../img/bg3.jpg);
+  background-size: cover;
+}
+
+.contactForm {
+  padding: 75px 50px;
+  background-color: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+.contactForm h3 {
+  margin-top: 20px;
+  color: #ff0157;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: 46px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 46px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.contactForm .inputBox input[type="submit"] {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff0157;
+  display: inline-block;
+  cursor: pointer;
+  letter-spacing: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  max-width: 100px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.contactForm .inputBox input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.copyrightText {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px 40px;
+  text-align: center;
+  margin: 100px;
+}
+
+.copyrightText p {
+  font-size: 1.2rem;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+.copyrightText p a {
+  text-decoration: none;
+  color: #ff0157;
+}
+.copyrightText p a:hover {
+  color: #ccc;
+}
